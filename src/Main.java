@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +23,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        System.out.println();
         System.out.println("last modified: " + new Date(file2.lastModified()));
         System.out.println("size: "+file2.length());
 
